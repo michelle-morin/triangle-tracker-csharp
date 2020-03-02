@@ -10,7 +10,8 @@ namespace TriangleTracker
       int firstLength = AskForSideLength("first");
       int secondLength = AskForSideLength("second");
       int thirdLength = AskForSideLength("third");
-      Triangle.CheckedTriangle(firstLength, secondLength, thirdLength);
+      string response = Triangle.CheckTriangle(firstLength, secondLength, thirdLength);
+      Console.WriteLine(response);
     }
 
     static int AskForSideLength(string side) 
